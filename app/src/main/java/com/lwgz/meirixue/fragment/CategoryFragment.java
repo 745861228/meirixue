@@ -2,8 +2,7 @@ package com.lwgz.meirixue.fragment;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
+
 import android.view.View;
 import android.widget.TextView;
 
@@ -46,7 +45,7 @@ public class CategoryFragment extends BaseFragment {
         });
         if (isOnline) {
             initData();
-        }else {
+        } else {
             showCurrentPage(ShowingPage.StateType.STATE_LOAD_ERROR);
         }
     }
