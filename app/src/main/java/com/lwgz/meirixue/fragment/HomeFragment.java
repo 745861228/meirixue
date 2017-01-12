@@ -13,32 +13,19 @@ import com.lwgz.meirixue.view.ShowingPage;
 
 public class HomeFragment extends BaseFragment {
 
-    private TextView textView;
-    private String data;
-
 
     @Override
     protected void onLoad() {
-        new BaseData() {
-            @Override
-            public void setResultData(final String data) {
-                HomeFragment.this.data = data;
-                showCurrentPage(ShowingPage.StateType.STATE_LOAD_SUCCESS);
-            }
 
-            @Override
-            protected void setResulttError(ShowingPage.StateType stateLoadError) {
-                showCurrentPage(ShowingPage.StateType.STATE_LOAD_ERROR);
-            }
-        }.getData("http://www.baidu.com", "http://www.baidu.com", 200000);
 
     }
 
 
     @Override
     public View createSuccessView() {
-        textView = new TextView(getActivity());
-        textView.setText(data);
-        return textView;
+
+
+
+        return null;
     }
 }
