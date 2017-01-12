@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/showing_error_iv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/rest"
+        android:layout_marginTop="230px"/>
+
+    <TextView
+        android:id="@+id/message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主人，您的信号好像被吃掉了"
+        android:layout_below="@+id/showing_error_iv_error"
+        android:layout_marginTop="50px"
+        android:layout_centerHorizontal="true"
+        android:textSize="28px"
+        android:textColor="#999999"/>
+
+
+    <TextView
+        android:id="@+id/showing_error_tv_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击刷新！"
+        android:textColor="#999999"
+        android:layout_below="@id/message_tv"
+        android:layout_marginTop="20px"
+        android:layout_centerHorizontal="true"/>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
